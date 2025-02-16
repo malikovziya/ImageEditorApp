@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#8ECDEC"
+    android:orientation="vertical">
+
+    <!-- Drawing Canvas -->
+    <com.example.imageeditorapp.DrawingView
+        android:id="@+id/canvasView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@drawable/img_1" />
+
+    <!-- Color selection panel -->
+    <LinearLayout
+        android:id="@+id/colorPickerPanel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <!-- Default Colors -->
+        <ImageButton
+            android:id="@+id/colorRed"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/color_button"
+            android:src="@android:color/holo_red_light" />
+
+        <ImageButton
+            android:id="@+id/colorGreen"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/color_button"
+            android:src="@android:color/holo_green_light" />
+
+        <ImageButton
+            android:id="@+id/colorBlue"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/color_button"
+            android:src="@android:color/holo_blue_light" />
+
+        <ImageButton
+            android:id="@+id/colorYellow"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/color_button"
+            android:src="@color/yellow" />
+
+        <ImageButton
+            android:id="@+id/colorBlack"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/color_button"
+            android:src="@android:color/black" />
+
+        <ImageButton
+            android:id="@+id/colorWhite"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/color_button"
+            android:src="@android:color/white" />
+
+        <!-- Additional Colors -->
+        <ImageButton
+            android:id="@+id/colorPurple"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/color_button"
+            android:src="@android:color/holo_purple" />
+    </LinearLayout>
+
+    <!-- Brush size adjustment SeekBar -->
+    <SeekBar
+        android:id="@+id/brushSizeSeekBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:max="50" />
+
+    <!-- Action Buttons -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <!-- Clear Button -->
+        <Button
+            android:id="@+id/clearButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Clear Canvas" />
+
+        <!-- Undo Button -->
+        <Button
+            android:id="@+id/undoButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Undo" />
+    </LinearLayout>
+</LinearLayout>
