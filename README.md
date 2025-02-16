@@ -18,7 +18,7 @@ This is an Android drawing app that allows users to:
 3. Build and run the app on an emulator or physical device.
 
 ## Video Recording
-You can view the video recording of the app using [this link.](https://drive.google.com/file/d/1uYiSuaEMfGqat-bFh7KlcE-wEkUQS8oA/view?usp=sharing)
+You can view the video recording of the app using [this link](https://drive.google.com/file/d/1uYiSuaEMfGqat-bFh7KlcE-wEkUQS8oA/view?usp=sharing).
 
 ## License
 This project is licensed under the MIT License.
